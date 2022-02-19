@@ -1,17 +1,17 @@
-package com.example.pet_kotlin
+package functions
 
 import android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
-import android.icu.text.CaseMap
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pet_kotlin.R
 import kotlinx.android.synthetic.main.item_todo.view.*
 
-class TodoAdapter (
-    private val todos: MutableList<Todo>
-    ) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
+class TarefasControle (
+    private val todos: MutableList<Tarefas>
+    ) : RecyclerView.Adapter<TarefasControle.TodoViewHolder>() {
 
     class TodoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
@@ -26,7 +26,7 @@ class TodoAdapter (
         )
     }
 
-    fun addTodo(todo:Todo){
+    fun addTodo(todo: Tarefas){
         todos.add(todo)
         notifyItemInserted(todos.size-1)
     }

@@ -1,6 +1,6 @@
-package com.example.pet_kotlin
+package functions
 
-data class Todo (
+data class Tarefas (
     val title: String,
     var isChecked: Boolean = false
     )
